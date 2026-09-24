@@ -1,0 +1,261 @@
+css
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    color: #212529;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero-section {
+    background:
+        radial-gradient(circle at 80% 30%, rgba(255, 193, 7, 0.12), transparent 30%),
+        linear-gradient(135deg, #0b1220, #1f2937);
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.hero-section h1 {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.hero-section p {
+    color: #d1d5db;
+    line-height: 1.8;
+}
+
+/* Hero Icon */
+
+.hero-icon {
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    border: 3px solid #ffc107;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 95px;
+    color: #ffc107;
+    background: rgba(255, 193, 7, 0.05);
+    box-shadow: 0 0 40px rgba(255, 193, 7, 0.15);
+    transition: 0.4s;
+}
+
+.hero-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px rgba(255, 193, 7, 0.3);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+section h2 {
+    font-weight: 700;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 3px;
+    background: #ffc107;
+    margin: 12px auto 0;
+    border-radius: 10px;
+}
+
+/* =========================
+   SPORTS CARDS
+========================= */
+
+.sport-card {
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.35s ease;
+}
+
+.sport-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+.sport-icon {
+    font-size: 55px;
+    color: #ffc107;
+    transition: 0.35s;
+}
+
+.sport-card:hover .sport-icon {
+    transform: scale(1.15);
+}
+
+/* =========================
+   FEATURE BOXES
+========================= */
+
+.feature-box {
+    height: 100%;
+    padding: 30px 20px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    transition: 0.35s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-7px);
+    border-color: #ffc107;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box i {
+    font-size: 45px;
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-warning {
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.2);
+}
+
+.btn-warning:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   FORMS
+========================= */
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 11px 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.15);
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #111827;
+}
+
+footer a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ffc107 !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        text-align: center;
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+    .hero-icon {
+        width: 170px;
+        height: 170px;
+        font-size: 70px;
+        margin-top: 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
